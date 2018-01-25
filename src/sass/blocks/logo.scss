@@ -1,0 +1,9 @@
+.logo {
+	display: flex;
+	&__text {
+		@include extra;
+		font-size: 18px;
+		letter-spacing: 1.2px;
+		line-height: 22px;
+	}
+}

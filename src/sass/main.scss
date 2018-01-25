@@ -1,9 +1,14 @@
 @import "components/reset";
 @import "components/mixin";
 @import "components/fonts";
+@import "components/icons";
+
 
 // VARIABLE
-$main_background: #172a4a;
+$blue_color: #20aa97;
+$link_hover: #20aa97;
+$header_circle: #e8f6f4;
+$service_text: #585858;
 
 html {
 	font-size: 16px;
@@ -14,42 +19,54 @@ html {
 	box-sizing: inherit;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	@include extra;
+	// letter-spacing: 1.2px;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+.title {
+	padding: 0 10px;
+	&--center {
+		text-align: center;
+	}
+	&--service {
+		padding-left: 30px;
+	}
+}
+
+.dot {
+	display: inline-block;
+	position: relative;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+	border-radius: 50%;
+	background: $blue_color;
+}
+
+a {
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+}
 
 // BLOCKS
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/service";
 
 
-// @media only screen and (max-width: 900px) {
-// 	html {
-// 		font-size: 14px;
-// 	}
-// }
 
-// @media only screen and (max-width: 500px) {
-// 	html {
-// 		font-size: 13px;
-// 	}
-// }
 
-// h1 {
-// 	font-size: 3rem;
-// }
 
-// h2 {
-// 	font-size: 2.9rem;
-// }
 
-// h3 {
-// 	font-size: 2.8rem;
-// }
 
-// h4 {
-// 	font-size: 2.6rem;
-// }
 
-// h5 {
-// 	font-size: 2.4rem;
-// }
 
-// h6 {
-// 	font-size: 2.2rem;
-// }
+
+

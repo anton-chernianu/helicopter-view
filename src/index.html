@@ -10,8 +10,47 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <main class="page">
-      <header class="header"></header>
+    <main class="page"><div class="svg-sprite">
+	<svg xmlns="http://www.w3.org/2000/svg">
+	<!-- viewBox="0 0 91 70" -->
+		<symbol id="icon-logo">
+			<path fill="#20AA97" d="M79.8,24.2l10.4,10.4L79.7,45.2l-1.8-1.8c0,0,6.4-8.8,0.1-17.3L79.8,24.2z"/>
+			<path fill="#20AA97" d="M13.2,45.2L2.8,34.8l10.5-10.5l1.8,1.8c0,0-6.4,8.8-0.1,17.3L13.2,45.2z"/>
+			<path fill="none" stroke="#333436" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M26.2,14.4
+			c11.2-11.2,29.4-11.2,40.6,0"/>
+			<path fill="none" stroke="#333436" stroke-width="6" stroke-miterlimit="10" d="M66.8,55c-11.2,11.2-29.4,11.2-40.6,0"/>
+			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -10.9112 43.0414)" fill="#20AA97" cx="46.5" cy="34.7" rx="16.2" ry="16.2"/>
+		</symbol>
+	</svg>
+</div>
+      <header class="header">
+        <div class="header__container"><a class="logo" href="/">
+            <div class="logo__icon">
+              <svg class="icon-logo" viewBox="0 0 91 70">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
+              </svg>
+            </div>
+            <div class="logo__text">helicopter <br><span>view.</span></div></a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">about us.</a></li>
+              <li class="menu__item menu__item--active"><a class="menu__link" href="#">service.</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">out projectts.</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">process.</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">faq.</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">blog.</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">contacts.</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__circle"></div>
+      </header>
+      <section class="service">
+        <div class="service__container">
+          <h1 class="title title--center title--service">service <span class="dot"></span></h1>
+          <p class="service__text">We identify compelling investment opportunities, opening doors that might otherwise appear closed.<br> We facilitate all aspects of deal execution.</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>

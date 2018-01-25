@@ -1,22 +1,20 @@
-@mixin poppins300 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
+// Fonts
+@mixin bold {
+	font-family: "ProximaNovaBold", sans-serif;
 }
-@mixin poppins400 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
+@mixin extra {
+	font-family: "ProximaNovaExtraBold", sans-serif;
 }
-@mixin poppins600 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+@mixin semi {
+	font-family: "ProximaNovaSemiBold", sans-serif;
 }
-@mixin open300 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-}
-@mixin open400 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+
+// Blocks
+@mixin container {
+	max-width: 1700px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 @mixin block-boxshadow {

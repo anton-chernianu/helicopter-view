@@ -1,0 +1,36 @@
+.menu {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		@include extra;
+		padding: 16px 26px;
+		a {
+			position: relative;
+			transition-duration: .5s;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -12px;
+				width: 0px;
+				height: 2px;
+				background: #000;
+				transition-duration: .5s;
+			}			
+			&:hover {
+				color: $link_hover;
+				&:before {
+					width: 15px;
+				}
+			}
+		}
+		&--active {
+			a {
+				color: $link_hover;
+				&:before {
+					width: 15px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.service {
+	&__container {
+		@include container;
+		padding-top: 110px;
+		padding-bottom: 60px;
+	}
+	&__text {
+		@include extra;
+		color: $service_text;
+		text-align: center;
+		padding-top: 92px;
+		font-size: 20.1px;
+		line-height: 35px;
+	}
+}

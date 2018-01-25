@@ -1,0 +1,24 @@
+@mixin poppins300 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+@mixin poppins400 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+@mixin poppins600 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+@mixin open300 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+@mixin open400 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin block-boxshadow {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}

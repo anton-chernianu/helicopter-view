@@ -6,7 +6,7 @@
 	&__grid {
 		display: flex;
 		flex-flow: wrap;
-		padding-top: 95px;
+		padding-top: 88px;
     	max-width: 1190px;
 		width: 100%;
 		margin: 0 auto;
@@ -24,15 +24,73 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100px;
-		height: 100px;
+		width: 107px;
+		height: 107px;
 		border-radius: 50%;
-		// background: $offer_circle;
-		background: #ccc;
+		background: $offer_circle;
+		// background: #ccc;
 	    margin-bottom: 45px;
+	    transition-duration: .5s;
+	    cursor: pointer;
+	    position: relative;
+
+	    &--hit {
+	    	padding-left: 10px;
+	    }
+		&--search {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		&--persons {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		&--call {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		&--shield {
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		&--clock {
+			padding-top: 10px;
+			padding-left: 20px;
+		}
+		&--support {
+			padding-left: 6px;
+		}
+
+		&:hover {
+			background: #ecffff;
+			
+			.icon-hit {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-search {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-persons {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-call {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-shield {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-clock {
+			    animation: bounce 1s linear infinite;
+			}
+			.icon-support {
+			    animation: bounce 1s linear infinite;
+			}
+
+		}
+
 	}
 	&__info {
-		padding-bottom: 70px;
+		padding-bottom: 64px;
 	}
 	&__title {
 		font-size: 20px;
@@ -43,3 +101,4 @@
 		line-height: 24px;
 	}
 }
+

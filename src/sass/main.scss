@@ -11,6 +11,7 @@ $header_circle: #e8f6f4;
 $service_text: #585858;
 $p_color: #585858;
 $offer_circle: #fbfdfd;
+$footer_background: #000;
 
 html {
 	font-size: 16px;
@@ -78,12 +79,39 @@ p {
 	color: #000;
 }
 
+.link {
+	@include extra;
+	color: $blue_color;
+	transition-duration: .5s;
+	&:hover {
+		color: #2de8cf;
+	}
+}
+
+@keyframes bounce {
+	0%{	
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes switch {
+	0%{transform: translateY(0%);}
+	100%{transform: translateY(20%);}
+}
+
 // BLOCKS
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/service";
 @import "blocks/ouroffer";
+@import "blocks/footer";
 
 
 

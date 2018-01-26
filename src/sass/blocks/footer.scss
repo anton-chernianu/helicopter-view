@@ -1,0 +1,15 @@
+.footer {
+	margin-top: 58px;
+	padding-top: 54px;
+	padding-bottom: 50px;
+	background-color: $footer_background;
+	&__text {
+		@include semi;
+		text-align: center;
+		color: #fff;
+		font-size: 14px;
+	}
+	&__company {
+		@include extra;
+	}
+}

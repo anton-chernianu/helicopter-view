@@ -10,42 +10,72 @@
 	&-development {
 		width: 80px;
 		height: 80px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-analysis {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-research {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-strategy {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-money {
 		width: 100px;
 		height: 80px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-phone {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-headset {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-document {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-managing {
 		width: 110px;
 		height: 80px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-advice {
 		width: 90px;
 		height: 90px;
+		&:hover {
+			animation: switch 0.3s alternate infinite linear;
+		}
 	}
 	&-hit {
 		width: 52px;
@@ -62,5 +92,17 @@
 	&-call {
 		width: 55px;
 		height: 55px;
+	}
+	&-shield {
+		width: 60px;
+		height: 60px;
+	}
+	&-clock {
+		width: 60px;
+		height: 60px;
+	}
+	&-support {
+		width: 60px;
+		height: 60px;
 	}
 }

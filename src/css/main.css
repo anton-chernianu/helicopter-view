@@ -139,9 +139,19 @@ button::-moz-focus-inner {
   height: 80px;
 }
 
+.icon-development:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
+}
+
 .icon-analysis {
   width: 90px;
   height: 90px;
+}
+
+.icon-analysis:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
 }
 
 .icon-research {
@@ -149,9 +159,19 @@ button::-moz-focus-inner {
   height: 90px;
 }
 
+.icon-research:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
+}
+
 .icon-strategy {
   width: 90px;
   height: 90px;
+}
+
+.icon-strategy:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
 }
 
 .icon-money {
@@ -159,9 +179,19 @@ button::-moz-focus-inner {
   height: 80px;
 }
 
+.icon-money:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
+}
+
 .icon-phone {
   width: 90px;
   height: 90px;
+}
+
+.icon-phone:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
 }
 
 .icon-headset {
@@ -169,9 +199,19 @@ button::-moz-focus-inner {
   height: 90px;
 }
 
+.icon-headset:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
+}
+
 .icon-document {
   width: 90px;
   height: 90px;
+}
+
+.icon-document:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
 }
 
 .icon-managing {
@@ -179,9 +219,19 @@ button::-moz-focus-inner {
   height: 80px;
 }
 
+.icon-managing:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
+}
+
 .icon-advice {
   width: 90px;
   height: 90px;
+}
+
+.icon-advice:hover {
+  -webkit-animation: switch 0.3s alternate infinite linear;
+          animation: switch 0.3s alternate infinite linear;
 }
 
 .icon-hit {
@@ -202,6 +252,21 @@ button::-moz-focus-inner {
 .icon-call {
   width: 55px;
   height: 55px;
+}
+
+.icon-shield {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-clock {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-support {
+  width: 60px;
+  height: 60px;
 }
 
 html {
@@ -275,6 +340,69 @@ p {
   font-family: "ProximaNovaExtraBold", sans-serif;
   font-size: 20px;
   color: #000;
+}
+
+.link {
+  font-family: "ProximaNovaExtraBold", sans-serif;
+  color: #20aa97;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.link:hover {
+  color: #2de8cf;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes switch {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+}
+
+@keyframes switch {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
 }
 
 .header {
@@ -531,7 +659,7 @@ p {
   -webkit-flex-flow: wrap;
       -ms-flex-flow: wrap;
           flex-flow: wrap;
-  padding-top: 95px;
+  padding-top: 88px;
   max-width: 1190px;
   width: 100%;
   margin: 0 auto;
@@ -562,16 +690,92 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 107px;
+  height: 107px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background: #ccc;
+  background: #fbfdfd;
   margin-bottom: 45px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  cursor: pointer;
+  position: relative;
+}
+
+.offer__icon--hit {
+  padding-left: 10px;
+}
+
+.offer__icon--search {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.offer__icon--persons {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.offer__icon--call {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.offer__icon--shield {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.offer__icon--clock {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.offer__icon--support {
+  padding-left: 6px;
+}
+
+.offer__icon:hover {
+  background: #ecffff;
+}
+
+.offer__icon:hover .icon-hit {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-search {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-persons {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-call {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-shield {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-clock {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
+}
+
+.offer__icon:hover .icon-support {
+  -webkit-animation: bounce 1s linear infinite;
+          animation: bounce 1s linear infinite;
 }
 
 .offer__info {
-  padding-bottom: 70px;
+  padding-bottom: 64px;
 }
 
 .offer__title {
@@ -582,4 +786,22 @@ p {
   padding-top: 7px;
   padding-right: 65px;
   line-height: 24px;
+}
+
+.footer {
+  margin-top: 58px;
+  padding-top: 54px;
+  padding-bottom: 50px;
+  background-color: #000;
+}
+
+.footer__text {
+  font-family: "ProximaNovaSemiBold", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer__company {
+  font-family: "ProximaNovaExtraBold", sans-serif;
 }

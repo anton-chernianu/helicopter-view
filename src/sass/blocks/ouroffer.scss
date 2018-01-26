@@ -102,3 +102,46 @@
 	}
 }
 
+@media (max-width: 768px) {
+
+	.offer {
+		&__grid {
+			padding-top: 35px;
+			max-width: 600px;
+		}
+		&__item {
+			width: 100%;
+			&:nth-child(2n) {
+				padding: 0;
+				padding-right: 5px;
+			}
+		}
+		&__info {
+			padding-bottom: 40px;
+		}
+		&__text {
+			padding-right: 5px;
+		}
+	}
+
+}
+
+@media (max-width: 500px) {
+	
+	.offer {
+		padding-top: 45px;
+		&__icon {
+			margin-bottom: 18px;
+		}
+		&__title {
+			font-size: 18px;
+		}
+		&__item {
+			padding: 5px;
+		}
+		&__text {
+			letter-spacing: -1px;
+		}
+	}
+
+}

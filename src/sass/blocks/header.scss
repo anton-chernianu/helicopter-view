@@ -23,9 +23,41 @@
 			width: 370px;
 			height: 370px;
 			border-radius: 50%;
+			// background: red;
 			background: $header_circle;
 			z-index: -1;
-			transform: scale(1);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		&__container {
+			padding: 12px 20px;
+		}
+		&__circle {
+			width: 236px;
+			height: 160px;
+			&:after {
+				top: -120px;
+				width: 270px;
+				height: 270px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		&__container {
+			padding: 12px 4px;
+		}
+		&__circle {
+			width: 85px;
+			height: 115px;
+			&:after {
+				top: -145px;
+			}
 		}
 	}
 }

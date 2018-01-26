@@ -269,6 +269,13 @@ button::-moz-focus-inner {
   height: 60px;
 }
 
+@media (max-width: 768px) {
+  .icon-logo {
+    width: 60px;
+    height: 35px;
+  }
+}
+
 html {
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -405,6 +412,48 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 70px;
+  }
+  .dot {
+    left: -20px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  .title--center {
+    text-align: left;
+  }
+  .title--service {
+    padding: 0 10px;
+  }
+  .title--offer {
+    padding-left: 10px;
+  }
+  .dot {
+    left: -10px;
+    width: 10px;
+    height: 10px;
+  }
+  .dot--min {
+    left: -16px;
+    width: 8px;
+    height: 8px;
+  }
+  .bold {
+    font-size: 16px;
+  }
+}
+
 .header {
   position: relative;
 }
@@ -447,9 +496,34 @@ p {
           border-radius: 50%;
   background: #e8f6f4;
   z-index: -1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 12px 20px;
+  }
+  .header__circle {
+    width: 236px;
+    height: 160px;
+  }
+  .header__circle:after {
+    top: -120px;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__container {
+    padding: 12px 4px;
+  }
+  .header__circle {
+    width: 85px;
+    height: 115px;
+  }
+  .header__circle:after {
+    top: -145px;
+  }
 }
 
 .logo {
@@ -464,6 +538,24 @@ p {
   font-size: 18px;
   letter-spacing: 1.2px;
   line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  .logo__icon {
+    padding-left: 10px;
+  }
+  .logo__text {
+    padding-top: 2px;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo__icon {
+    padding-left: 0;
+  }
 }
 
 .menu__list {
@@ -509,6 +601,12 @@ p {
 
 .menu__item--active a:before {
   width: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .service__container {
@@ -638,6 +736,85 @@ p {
   padding-top: 12px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .service__container {
+    padding-top: 60px;
+  }
+  .service__subtext {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 98px;
+    padding-right: 111px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+  }
+  .service__grid {
+    padding-top: 16px;
+  }
+  .service__item {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .service__text {
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .service__icon--development {
+    padding-left: 22px;
+    padding-top: 44px;
+  }
+  .service__icon--analysis {
+    padding-left: 42px;
+    padding-top: 54px;
+  }
+  .service__icon--research {
+    padding-left: 16px;
+    padding-top: 54px;
+  }
+  .service__icon--strategy {
+    padding-left: 48px;
+    padding-top: 52px;
+  }
+  .service__icon--money {
+    padding-left: 6px;
+    padding-top: 22px;
+  }
+  .service__icon--phone {
+    padding-left: 48px;
+    padding-top: 34px;
+  }
+  .service__icon--headset {
+    padding-left: 20px;
+    padding-top: 28px;
+  }
+  .service__icon--document {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .service__icon--managing {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .service__icon--advice {
+    padding-left: 45px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .service__subtext {
+    padding-top: 34px;
+    padding-right: 2px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .service__text {
+    padding: 0;
+    font-size: 16px;
+  }
 }
 
 .offer {
@@ -788,6 +965,44 @@ p {
   line-height: 24px;
 }
 
+@media (max-width: 768px) {
+  .offer__grid {
+    padding-top: 35px;
+    max-width: 600px;
+  }
+  .offer__item {
+    width: 100%;
+  }
+  .offer__item:nth-child(2n) {
+    padding: 0;
+    padding-right: 5px;
+  }
+  .offer__info {
+    padding-bottom: 40px;
+  }
+  .offer__text {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .offer {
+    padding-top: 45px;
+  }
+  .offer__icon {
+    margin-bottom: 18px;
+  }
+  .offer__title {
+    font-size: 18px;
+  }
+  .offer__item {
+    padding: 5px;
+  }
+  .offer__text {
+    letter-spacing: -1px;
+  }
+}
+
 .footer {
   margin-top: 58px;
   padding-top: 54px;
@@ -804,4 +1019,24 @@ p {
 
 .footer__company {
   font-family: "ProximaNovaExtraBold", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 45px;
+    padding-top: 36px;
+    padding-bottom: 50px;
+  }
+  .footer__text {
+    line-height: 19px;
+    font-size: 12px;
+    padding: 0 25px;
+  }
 }

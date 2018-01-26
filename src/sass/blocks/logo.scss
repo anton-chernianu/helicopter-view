@@ -7,3 +7,24 @@
 		line-height: 22px;
 	}
 }
+@media (max-width: 768px) {
+	.logo {
+		&__icon {
+			padding-left: 10px;
+		}
+		&__text {
+			padding-top: 2px;
+			font-size: 13px;
+			letter-spacing: 1.3px;
+			line-height: 17px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.logo {
+		&__icon {
+			padding-left: 0;
+		}
+	}
+}

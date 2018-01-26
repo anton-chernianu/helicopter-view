@@ -106,3 +106,14 @@
 		height: 60px;
 	}
 }
+
+@media (max-width: 768px) {
+	.icon {
+		&-logo {
+			width: 60px;
+			height: 35px;
+		}
+	}
+
+
+}

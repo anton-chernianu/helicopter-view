@@ -2,14 +2,84 @@
 	&__container {
 		@include container;
 		padding-top: 110px;
-		padding-bottom: 60px;
 	}
-	&__text {
+	&__subtext {
 		@include extra;
 		color: $service_text;
 		text-align: center;
 		padding-top: 92px;
 		font-size: 20.1px;
 		line-height: 35px;
+	}
+	&__grid {
+		max-width: 1582px;
+		margin: 0 auto;
+		width: 100%;
+		padding-top: 80px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	&__item {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		width: 20%;
+		margin-bottom: 60px;
+	}
+	&__icon {
+		width: 150px;
+		height: 150px;
+		// background: #ccc;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--development {
+			padding-left: 30px;
+			padding-top: 14px;
+		}
+		&--analysis {
+			padding-left: 22px;
+			padding-top: 24px;
+		}
+		&--research {
+			padding-left: 18px;
+			padding-top: 24px;
+		}
+		&--strategy {
+			padding-left: 24px;
+			padding-top: 24px;
+		}
+		&--money {
+			padding-left: 6px;
+			padding-top: 16px;
+		}
+		&--phone {
+			padding-left: 16px;
+			padding-top: 20px;
+		}
+		&--headset {
+			padding-left: 6px;
+			padding-top: 18px;
+		}
+		&--document {
+			padding-left: 28px;
+			padding-top: 18px;
+		}
+		&--managing {
+			padding-left: 8px;
+			padding-top: 16px;
+		}
+		&--advice {
+			padding-left: 22px;
+			padding-top: 20px;
+		}
+	}
+	&__text {
+		padding-top: 12px;
+	    line-height: 24px;
+		text-align: center;
 	}
 }

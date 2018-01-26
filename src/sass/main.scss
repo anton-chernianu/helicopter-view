@@ -9,6 +9,7 @@ $blue_color: #20aa97;
 $link_hover: #20aa97;
 $header_circle: #e8f6f4;
 $service_text: #585858;
+$p_color: #585858;
 
 html {
 	font-size: 16px;
@@ -26,6 +27,18 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-size: 100px;
+}
+
+a {
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+}
+
+p {
+	@include semi;
+	font-size: 18px;
+	color: $p_color;
 }
 
 .title {
@@ -48,10 +61,10 @@ h1 {
 	background: $blue_color;
 }
 
-a {
+.bold {
+	@include extra;
+	font-size: 20px;
 	color: #000;
-	text-transform: none;
-	text-decoration: none;
 }
 
 // BLOCKS

@@ -184,6 +184,26 @@ button::-moz-focus-inner {
   height: 90px;
 }
 
+.icon-hit {
+  width: 52px;
+  height: 52px;
+}
+
+.icon-search {
+  width: 52px;
+  height: 52px;
+}
+
+.icon-persons {
+  width: 70px;
+  height: 50px;
+}
+
+.icon-call {
+  width: 55px;
+  height: 55px;
+}
+
 html {
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -201,6 +221,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 100px;
+}
+
+h2 {
+  font-size: 60px;
 }
 
 a {
@@ -227,6 +251,10 @@ p {
   padding-left: 30px;
 }
 
+.title--offer {
+  padding-left: 30px;
+}
+
 .dot {
   display: inline-block;
   position: relative;
@@ -236,6 +264,11 @@ p {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #20aa97;
+}
+
+.dot--min {
+  width: 10px;
+  height: 10px;
 }
 
 .bold {
@@ -477,4 +510,76 @@ p {
   padding-top: 12px;
   line-height: 24px;
   text-align: center;
+}
+
+.offer {
+  padding-top: 76px;
+}
+
+.offer__container {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.offer__grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+  padding-top: 95px;
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.offer__item {
+  width: 50%;
+}
+
+.offer__item:nth-child(2n) {
+  padding-left: 64px;
+}
+
+.offer__item:nth-child(2n) .offer__text {
+  padding-right: 0;
+}
+
+.offer__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 45px;
+}
+
+.offer__info {
+  padding-bottom: 70px;
+}
+
+.offer__title {
+  font-size: 20px;
+}
+
+.offer__text {
+  padding-top: 7px;
+  padding-right: 65px;
+  line-height: 24px;
 }

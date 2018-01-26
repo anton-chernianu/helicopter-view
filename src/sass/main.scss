@@ -10,6 +10,7 @@ $link_hover: #20aa97;
 $header_circle: #e8f6f4;
 $service_text: #585858;
 $p_color: #585858;
+$offer_circle: #fbfdfd;
 
 html {
 	font-size: 16px;
@@ -22,11 +23,14 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
 	@include extra;
-	// letter-spacing: 1.2px;
 }
 
 h1 {
 	font-size: 100px;
+}
+
+h2 {
+	font-size: 60px;
 }
 
 a {
@@ -49,6 +53,9 @@ p {
 	&--service {
 		padding-left: 30px;
 	}
+	&--offer {
+		padding-left: 30px;
+	}
 }
 
 .dot {
@@ -59,6 +66,10 @@ p {
     height: 20px;
 	border-radius: 50%;
 	background: $blue_color;
+	&--min {
+		width: 10px;
+		height: 10px;
+	}
 }
 
 .bold {
@@ -72,6 +83,7 @@ p {
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/service";
+@import "blocks/ouroffer";
 
 
 

@@ -1,0 +1,45 @@
+.offer {
+	padding-top: 76px;
+	&__container {
+		@include container;
+	}
+	&__grid {
+		display: flex;
+		flex-flow: wrap;
+		padding-top: 95px;
+    	max-width: 1190px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__item {
+		width: 50%;
+		&:nth-child(2n) {
+			padding-left: 64px;
+			.offer__text {
+				padding-right: 0;
+			}
+		}
+	}
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		// background: $offer_circle;
+		background: #ccc;
+	    margin-bottom: 45px;
+	}
+	&__info {
+		padding-bottom: 70px;
+	}
+	&__title {
+		font-size: 20px;
+	}
+	&__text {
+		padding-top: 7px;
+		padding-right: 65px;
+		line-height: 24px;
+	}
+}

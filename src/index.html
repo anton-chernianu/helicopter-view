@@ -19,7 +19,10 @@
 			<path fill="none" stroke="#333436" stroke-width="6" stroke-linejoin="round" stroke-miterlimit="10" d="M26.2,14.4
 			c11.2-11.2,29.4-11.2,40.6,0"/>
 			<path fill="none" stroke="#333436" stroke-width="6" stroke-miterlimit="10" d="M66.8,55c-11.2,11.2-29.4,11.2-40.6,0"/>
-			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -10.9112 43.0414)" fill="#20AA97" cx="46.5" cy="34.7" rx="16.2" ry="16.2"/>
+			<g>
+				<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -10.9112 43.0414)" fill="#20AA97" cx="46.5" cy="34.7" rx="16.2" ry="16.2"/>
+				<animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="5s" repeatCount="1" />
+           </g>
 		</symbol>
 	<!-- viewBox="0 0 80 80" -->
 		<symbol id="icon-development">
@@ -125,6 +128,11 @@
 	</svg>
 </div>
 
+      <div class="preloader">
+        <svg class="icon-logo icon-logo--preloader" viewBox="0 0 91 70">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
+        </svg>
+      </div>
       <header class="header">
         <div class="header__container"><a class="logo" href="/">
             <div class="logo__icon">
@@ -133,7 +141,10 @@
               </svg>
             </div>
             <div class="logo__text">helicopter <br><span>view.</span></div></a>
-          <nav class="menu">
+          <div class="menu">
+            <div class="menu__mobile">
+              <div class="menu__humburger"><span> </span><span> </span><span> </span></div>
+            </div>
             <ul class="menu__list">
               <li class="menu__item"><a class="menu__link" href="#">about us.</a></li>
               <li class="menu__item menu__item--active"><a class="menu__link" href="#">service.</a></li>
@@ -143,7 +154,7 @@
               <li class="menu__item"><a class="menu__link" href="#">blog.</a></li>
               <li class="menu__item"><a class="menu__link" href="#">contacts.</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
         <div class="header__circle"></div>
       </header>
@@ -320,7 +331,7 @@
         </div>
       </section>
       <footer class="footer">
-        <p class="footer__text">© 2017. <span class="footer__company">helicopter view.</span> All rights reserved. Design and development – <a class="link" targer="_blank" href="http://sponge.com.ua/">Sponge D&D</a>.</p>
+        <p class="footer__text">© 2017. <span class="footer__company">helicopter view.</span> All rights reserved. Design and development – <a class="link" target="_blank" href="http://sponge.com.ua/">Sponge D&D</a>.</p>
       </footer>
       <script src="js/main.js"></script>
     </main>

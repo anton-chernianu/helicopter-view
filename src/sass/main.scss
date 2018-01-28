@@ -13,9 +13,14 @@ $p_color: #585858;
 $offer_circle: #fbfdfd;
 $footer_background: #000;
 
+	
 html {
 	font-size: 16px;
 	box-sizing: border-box;
+}
+
+body {
+	position: relative;
 }
 
 *, *:before, *:after {
@@ -86,6 +91,14 @@ p {
 	&:hover {
 		color: #2de8cf;
 	}
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.visible {
+	transition: opacity 1.2s ease-out;
 }
 
 @keyframes bounce {
@@ -161,6 +174,7 @@ p {
 
 
 // BLOCKS
+@import "blocks/preloader";
 @import "blocks/header";
 @import "blocks/logo";
 @import "blocks/menu";

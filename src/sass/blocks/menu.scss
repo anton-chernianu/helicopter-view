@@ -1,6 +1,51 @@
 .menu {
+	&__mobile {
+		display: none;
+		position: relative;
+		z-index: 101;
+	}
+	&__humburger {
+		padding-top: 11px;
+		padding-right: 15px;
+		span {
+			display: block;
+			width: 21px;
+			height: 2px;
+			background: #000;
+			margin: 3px;
+			transition-duration: .5s;
+		}
+		span:nth-child(2) {
+			width: 18px;
+		}
+		&:hover {
+			span:nth-child(2) {
+				width: 20px;
+			}
+		}
+		&--open {
+			span {
+				width: 23px;
+				height: 4px;
+			}
+			span:nth-child(1) {
+				transform: rotate(45deg);
+				transform-origin: top left;
+			}
+			span:nth-child(2) {
+				opacity: 0;
+			}
+			span:nth-child(3) {
+				transform: rotate(-45deg);
+				transform-origin: bottom left;
+			}
+		}
+	}
 	&__list {
 		display: flex;
+		&--active {
+			display: block !important;
+		}
 	}
 	&__item {
 		@include extra;
@@ -37,6 +82,20 @@
 
 @media (max-width: 768px) {
 	.menu {
-		display: none;
+		&__list {
+			display: none;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			padding-top: 50px;
+			z-index: 100;
+			background: rgba(255,255,255,0.95);
+
+		}
+		&__mobile {
+			display: block;
+		}
 	}
 }

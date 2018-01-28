@@ -21,6 +21,42 @@ html {
 
 body {
 	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		border-left: 2px dotted rgba(236,236,236,.6);
+		left: 5%;
+		top: 0;
+		z-index: -1;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		border-left: 2px dotted rgba(236,236,236,.6);
+		top: 0;
+		left: 50%;
+		transform: translateX(50%);
+		z-index: -1;
+	}
+}
+
+main {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		border-left: 2px dotted rgba(236,236,236,.6);
+		top: 0;
+		left: 25%;
+		transform: translateX(25%);
+		z-index: -1;
+	}
 }
 
 *, *:before, *:after {
@@ -95,10 +131,12 @@ p {
 
 .hidden {
 	opacity: 0;
+	// visibility: hidden;
 }
 
 .visible {
 	transition: opacity 1.2s ease-out;
+	visibility: visible;
 }
 
 @keyframes bounce {
@@ -116,6 +154,19 @@ p {
 @keyframes switch {
 	0%{transform: translateY(0%);}
 	100%{transform: translateY(20%);}
+}
+
+@media (max-width: 1280px) { 
+	body {
+		&:before, &:after {
+			display: none;
+		}
+	}
+	main {
+		&:after {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 768px) { 

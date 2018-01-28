@@ -1,5 +1,17 @@
+// Preloader
+window.onload = function(){
+	setTimeout(function(){
+		var preloader = document.querySelector('.preloader');
+		preloader.classList.add('preloader--hidden');
+		setTimeout(function(){
+			preloader.style = "visibility: hidden;";
+		},1000);
+	},1800);
+}
+// Finish Preloader
+
 document.addEventListener('DOMContentLoaded', function(event) { 
-	
+
 	// Mobile Menu
 	var menuList = document.querySelector('.menu__list');
 	var menuHamburger = document.querySelector('.menu__humburger');

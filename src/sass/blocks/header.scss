@@ -1,5 +1,6 @@
 .header {
 	position: relative;
+	border-bottom: 2px dotted rgba(236,236,236,.6);
 	&__container {
 		@include container;
 		display: flex;
@@ -30,8 +31,8 @@
 	}
 }
 
-@media (max-width: 768px) {
-	.header {
+@media (max-width: 1024px) {
+.header {
 		&__container {
 			padding: 12px 20px;
 		}

@@ -70,19 +70,19 @@ gulp.task('sass', function () {
 gulp.task('build', ['clean', 'sass'], function() {
 
 	var buildCss = gulp.src('src/css/**/*') // Переносим css в продакшен
-	.pipe(gulp.dest('build/css'))
+	.pipe(gulp.dest('dist/css'))
 
 	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('build/fonts'))
+	.pipe(gulp.dest('dist/fonts'))
 
 	var buildJs = gulp.src('src/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('build/js'))
+	.pipe(gulp.dest('dist/js'))
 
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('build'));
+	.pipe(gulp.dest('dist'));
 
 	var buildHtml = gulp.src('src/images/**/*') // Переносим TinyPng в продакшен
-	.pipe(gulp.dest('build/images'));
+	.pipe(gulp.dest('dist/images'));
 
 });
 
@@ -144,7 +144,7 @@ console.log('finish');
 });
 
 gulp.task('clean', function() {
-	return del.sync('build'); 
+	return del.sync('dist'); 
 });
 
 gulp.task('clean-min', function() {

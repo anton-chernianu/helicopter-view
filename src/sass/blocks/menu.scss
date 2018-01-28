@@ -80,6 +80,14 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.menu {
+		&__item {
+			padding: 16px 14px;
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.menu {
 		&__list {

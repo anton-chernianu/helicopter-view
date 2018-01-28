@@ -291,6 +291,49 @@ body {
   position: relative;
 }
 
+body:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border-left: 2px dotted rgba(236, 236, 236, 0.6);
+  left: 5%;
+  top: 0;
+  z-index: -1;
+}
+
+body:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border-left: 2px dotted rgba(236, 236, 236, 0.6);
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: -1;
+}
+
+main {
+  position: relative;
+}
+
+main:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border-left: 2px dotted rgba(236, 236, 236, 0.6);
+  top: 0;
+  left: 25%;
+  -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+          transform: translateX(25%);
+  z-index: -1;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -376,6 +419,7 @@ p {
 .visible {
   -webkit-transition: opacity 1.2s ease-out;
   transition: opacity 1.2s ease-out;
+  visibility: visible;
 }
 
 @-webkit-keyframes bounce {
@@ -430,6 +474,15 @@ p {
   }
 }
 
+@media (max-width: 1280px) {
+  body:before, body:after {
+    display: none;
+  }
+  main:after {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 70px;
@@ -473,9 +526,10 @@ p {
 }
 
 .preloader {
+  display: none;
   position: fixed;
   background: #fff;
-  z-index: 99999;
+  z-index: 10;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -491,10 +545,29 @@ p {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
+  -webkit-transition: opacity 0.8s ease-out;
+  transition: opacity 0.8s ease-out;
+}
+
+.preloader .icon-logo--preloader {
+  -webkit-animation: bounce 1.6s linear infinite;
+          animation: bounce 1.6s linear infinite;
+}
+
+.preloader--hidden {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .icon-logo--preloader {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .header {
   position: relative;
+  border-bottom: 2px dotted rgba(236, 236, 236, 0.6);
 }
 
 .header__container {
@@ -537,7 +610,7 @@ p {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header__container {
     padding: 12px 20px;
   }
@@ -700,6 +773,12 @@ p {
 
 .menu__item--active a:before {
   width: 15px;
+}
+
+@media (max-width: 1024px) {
+  .menu__item {
+    padding: 16px 14px;
+  }
 }
 
 @media (max-width: 768px) {
